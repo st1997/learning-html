@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="/" method="post">
+        <fieldset>
+            <legend>Username and password</legend>
+            <input required name="username" placeholder="Username" type="text" autofocus="autofocus"/>
+            <br>    
+            <input required name="password" placeholder="Password" type="password"/>
+            <br>
+            <input required name="email" placeholder="Email" type="email"/> <br>
+            <label for="agree">Agree</label>
+            <input tabindex="-1" id="agree" type="checkbox"/>
+            <br>
+            <input type="submit" value="Login"/>
+        </fieldset>
+        <fieldset>
+            <legend>Random</legend>
+            <textarea>Type here...</textarea>
+            <input type="reset" value="reset"/>
+              <br/>  
+              <label for="male">Male:</label>
+              <input id="male" type="radio" name="gender" value="male"/>
+              <label for="female">Female:</label>
+              <input id="female" type="radio" name="gender" value="female"/>
+            <select name="dropdown">
+                <option value="nothing"></option>
+                <option value="pesho">Pesho</option>
+                <option value="gosho">Gosho</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Volume</legend>
+           0<input type="range" min="0" max="100" step="5"/>100 <br>
+           <input type="number" step="5"/>
+        </fieldset>
+
+        </form>
+
+    </body>
+</html>
